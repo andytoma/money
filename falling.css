@@ -4,6 +4,14 @@
   perspective: 90px;
   /* left --- JS (random)*/
 }
+#money{
+  color: red;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  z-index: 1;
+}
+
 .coin.falling{
   animation: fall 1s ease-in;
   animation-fill-mode: forwards;
@@ -15,11 +23,19 @@
   animation: rotX .2s ease-in;
   animation-fill-mode: forwards;
   transform-origin: bottom;
-
 }
+.wallet{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50px;
+  left: 50px;
+}
+
+
 @keyframes fall{
   0%{ top:1%;  }
-  100%{ top:90%;}
+  100%{ top:80%;}
 }
 @keyframes rot {
   0%{   transform: rotateY(0deg;)}
